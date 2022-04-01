@@ -1,0 +1,98 @@
+/* header styles */
+.avatar {
+    height: 237px;
+    width: 217px;
+}
+header {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.contactButton {
+    color: #287aed;
+    border: 1px solid;
+    border-color: #287aed;
+    border-width: 2px;
+    border-radius: 290486px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: .5rem;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none
+}
+.contactButton:hover {
+    background-color: #287aed;
+    color: white;
+    transition: .25s;
+}
+/* body styles */
+body {
+    background-color: white;
+    color: black;
+    font-family: "eurostile", sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.about {
+    padding-top: 2rem;
+    background-color: #287aed;
+    color: white;
+    line-height: 1.125;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.about p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 50%;
+}
+.mySkillsGridContainer {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    margin-top: -8rem;
+}
+.mySkillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    font-size: 18px;
+    border-color: black;
+    border: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    width: 75%;
+    background-color: white;
+}
+.mySkillsGrid h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.mySkillsGrid h4 {
+    color: #287aed;
+}
+
+.mySkillsGrid ul {
+    list-style: none;
+}
+.column {
+    border-right: 1px solid #E6ECF8;
+    border-bottom: 0px solid #E6ECF8;
+}
+
