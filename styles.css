@@ -1,6 +1,7 @@
 :root {
   --primary: #287aed;
   --secondary: white;
+  --tertiary: black;
 }
 body {
   margin: 0;
@@ -37,7 +38,7 @@ header {
 /* body styles */
 body {
   background-color: var(--secondary);
-  color: black;
+  color: var(--tertiary);
   font-family: "eurostile", sans-serif;
   text-align: center;
   line-height: 1.5;
@@ -107,7 +108,7 @@ h2 {
 }
 /* projects */
 .projects {
-  /* background-color: #287aed; */
+  margin-bottom: 2.5rem;
 }
 .projectsGridContainer {
   display: flex;
@@ -125,6 +126,7 @@ h2 {
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 2px #e6ecf8;
   margin: 10px;
   height: 20rem;
+  position: relative;
 }
 .projectImage {
   width: 100%;
@@ -132,28 +134,36 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 2px #e6ecf8;
   z-index: 1;
+  transition: 0.25s;
 }
 .projectImageHidden {
-  display: none;
+  opacity: 0.2;
   transition: 0.25s;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .projectDetails {
   display: none;
-  position: absolute;
 }
 .projectDetailsActive {
   width: 100%;
   height: 100%;
   transition: 0.25s;
-}
-.projectDetails:hover {
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: 0.25s;
-  position: absolute;
-  color: var(--secondary);
   z-index: 10;
+  position: relative;
+}
+.projectDetailsActive h4 {
+  color: var(--primary);
+  font-weight: bold;
+}
+.projectDetailsActive p {
+  color: var(--tertiary);
+  font-size: 18px;
 }
 /* contact info styles */
 .contactInfo {
@@ -175,4 +185,10 @@ h2 {
   width: 20px;
   border: white;
   border-radius: 5px;
+}
+.hiddenContact {
+  color: var(--primary);
+}
+.activeContact {
+  color: var(--secondary);
 }
