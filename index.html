@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./index.js"></script>
     <title>Drew Gainey | Software Engineer</title>
   </head>
   <body>
@@ -61,7 +62,7 @@
           <div class="column"><p>Grid Item</p></div>
         </div>
       </div>
-      <div class="projects">
+      <div class="projects" id="projects">
         <h2>Projects</h2>
         <p>
           I'm baby paleo shabby chic tbh, iceland tacos live-edge pork belly
@@ -70,20 +71,44 @@
           carry, semiotics trust fund taxidermy YOLO. s
         </p>
         <div class="projectsGridContainer">
-          <div class="projectsGrid">
-            <div class="project">
-              <img src="./SketchFlex.PNG" class="projectImage" />
+          <div class="projectsGrid" id="projectsGrid">
+            <div class="project" id="project1">
+              <img src="./SketchFlex.PNG" class="projectImage" id="project1Img" />
               <div>
-                <p class="projectDetails">
+                <p class="projectDetails" id="project1Details">
                   Project I made at we can code it. Java, Javascript other stuff
                 </p>
               </div>
             </div>
-            <h5>project</h5>
-            <h5>project</h5>
+              <div class="project" id="project2">
+                <img src="./messenger.PNG" class="projectImage" />
+                <div>
+                  <p class="projectDetails">
+                    Project I made for dumb interview
+                  </p>
+                </div>
+              </div>
+              <div class="project" id="project3">
+                <img src="" class="projectImage" />
+                <div>
+                  <p class="projectDetails">
+                    Place holder for third project  
+                  </p>
+                </div>
+              </div>
           </div>
-        </div>
       </div>
     </main>
+    <footer>
+      <div class="contactInfo">
+        <p>Contact me</p>
+        <div class="contactIcons">
+          <img src="./phone-svgrepo-com.svg">
+          <img src="./email-svgrepo-com.svg">
+          <img src="./linkedin-svgrepo-com.svg">
+          <img src="./github-svgrepo-com.svg">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
