@@ -28,22 +28,17 @@
       <!-- there is css setting a default size for the avatar -->
       <img class="avatar" src="./avatar3.svg" />
       <div class="about">
-        <h2>A little bit about me</h2>
+        <h2>A Little Bit About Me</h2>
         <p>
-          Fam cornhole irony, hot chicken vinyl pickled vexillologist. Pinterest
-          cliche waistcoat post-ironic, raclette venmo palo santo occupy
-          normcore disrupt. Listicle gochujang succulents tilde tousled viral
-          retro skateboard 90's ugh taxidermy shabby chic. Williamsburg organic
-          kinfolk pinterest, tbh trust fund readymade palo santo cronut
-          semiotics austin plaid subway tile selvage gastropub. Leggings
-          church-key fixie VHS mustache.
+          An accountant by training, I've decided to purse my passion for technolgy and make the carrer jump to software engineering.
+          I've been working in the technolgy space as a project and systems manager but am looking for an opportunity to join an engineering team and pursue my passion of software developement.
         </p>
       </div>
       <div class="mySkillsGridContainer">
         <div class="mySkillsGrid">
           <div class="column">
             <img src="./code.svg" />
-            <h3>Skills</h3>
+            <h3>What I Do</h3>
             <p>These are the technologies I work with</p>
             <h4>Frontend</h4>
             <ul>
@@ -58,30 +53,35 @@
               <li>MongoDB</li>
             </ul>
           </div>
-          <div class="column"><p>Grid Item</p></div>
-          <div class="column"><p>Grid Item</p></div>
+          <div class="column">
+            <img src="./learning.svg">
+            <h3>What I'm Learning</h3>
+            <p>This is what I'm currently spending my time on</p>
+          </div>
+          <div class="column">
+            <img src="./desk-svgrepo-com.svg">
+            <h3>What I bring to the table</h3>
+          </div>
         </div>
       </div>
       <div class="projects" id="projects">
         <h2>Projects</h2>
-        <p>
-          I'm baby paleo shabby chic tbh, iceland tacos live-edge pork belly
-          snackwave godard intelligentsia vexillologist sriracha tofu. Craft
-          beer normcore cloud bread austin prism yuccie dreamcatcher everyday
-          carry, semiotics trust fund taxidermy YOLO. s
+        <p id="projects-about">
+          Here's a selection of projects I've worked on 
         </p>
         <div class="projectsGridContainer">
           <div class="projectsGrid" id="projectsGrid">
             <div class="project" id="project1">
-              <img src="./SketchFlex.PNG" class="projectImage" id="project1Img" />
+              <img src="./ADC7B3F1-63C7-4E3D-8998-2B87D5371C60.png" class="projectImage" id="project1Img" />
               <div>
                 <div class="projectDetails" id="project1Details">
-                  <h4>Project I made at we can code it. Java, Javascript other stuff</h4>
-                  <p>I refactored this to use react components and changed the backend to an express.js router
-                     I hope this is good place holder text for this project</p>
+                  <h4>Greek Food Map</h4>
+                  <p>iOS App made using React-Native <br>
+                  My girlfriend and myself love Greek food, so I made an iphone app that shows us all the greek resturants near our location. 
+                  It also has the menus for us so no need to go from website to website to find what to eat</p>
                   <a
                      class="contactButton"
-                     href="https://github.com/sketch-flex/sketch-flex"
+                     href="https://github.com/drewgainey/Greek-Food-Map"
                      target="_blank"
                      id="project1Link"
                      >Github</a>
@@ -89,20 +89,38 @@
               </div>
             </div>
               <div class="project" id="project2">
-                <img src="./messenger.PNG" class="projectImage" />
+                <img src="./ticketingsystem.JPG" class="projectImage" id="project2Img"/>
                 <div>
-                  <p class="projectDetails">
-                    Project I made for dumb interview
-                  </p>
+                  <div class="projectDetails" id="project2Details">
+                    <h4>Support Ticket System</h4>
+                    <p>Full Stack React Application <br>
+                      Support Ticket System I created to use in my job as a Systems Manger.
+                       Users can submit requests for help with systems issues
+                     </p>
+                    <a
+                       class="contactButton"
+                       href="https://github.com/drewgainey/Ticket-System"
+                       target="_blank"
+                       id="project2Link"
+                       >Github</a>
+                  </div>
                 </div>
               </div>
               <div class="project" id="project3">
-                <img src="" class="projectImage" />
+                <img src="./SketchFlex.PNG" class="projectImage" id="project3Img"/>
                 <div>
-                  <p class="projectDetails">
-                    Place holder for third project  
-                  </p>
-                </div>
+                  <div class="projectDetails" id="project3Details">
+                    <h4>Sketch-flex</h4>
+                    <p>Bootcamp Final Project <br>
+                      Application allows users to create sketches and save them to notebooks to come back and edit later. 
+                      This was made with Java and Spring MVC but I'm reworking this to add a React UI</p>
+                    <a
+                       class="contactButton"
+                       href="https://github.com/sketch-flex/sketch-flex"
+                       target="_blank"
+                       id="project3Link"
+                       >Github</a>
+                  </div>
               </div>
           </div>
       </div>
@@ -112,12 +130,11 @@
         <p>Contact me</p>
         <div class="contactIcons">
           <img src="./phone-svgrepo-com.svg" id="phoneIcon">
-          <img src="./email-svgrepo-com.svg">
-          <img src="./linkedin-svgrepo-com.svg">
-          <img src="./github-svgrepo-com.svg">
+          <a href="mailto: drewgainey@gmail.com"><img src="./email-svgrepo-com.svg"></a>
+          <a href="https://www.linkedin.com/in/drewgainey/" target="_blank"><img src="./linkedin-svgrepo-com.svg"></a>
+          <a href="https://github.com/drewgainey" target="_blank"><img src="./github-svgrepo-com.svg"></a>
         </div>
         <p class="hiddenContact" id="phoneInfo">Phone: 937-361-1794</p>
-        <p class="hiddenContact">Email: drewgainey@gmail.com</p>
       </div>
     </footer>
   </body>
